@@ -5,37 +5,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101827">
-<title>PocketAI Studio | Free Business Tools for Indian Sellers</title>
-<meta name="description" content="Free business tools, personalised customer reply templates, product descriptions and digital downloads for Indian small businesses.">
+<title>PocketAI Studio | Free Tools for Indian Sellers</title>
+<meta name="description" content="Free pricing calculator, product description generator, customer reply templates and downloadable resources for Indian sellers.">
 <style>
 :root{--bg:#f5f7fb;--ink:#172033;--blue:#4f46e5;--muted:#667085;--card:#fff;--line:#e4e7ec}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,sans-serif;line-height:1.6}
 header{background:#101827;color:white;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.brand{font-size:20px;font-weight:800}.brand span{color:#a5b4fc}
+.brand{font-size:20px;font-weight:800}
+.brand span{color:#a5b4fc}
 header a{color:white;text-decoration:none;font-size:14px}
-.hero{background:linear-gradient(135deg,#101827,#3730a3);color:white;padding:44px 6% 50px}
+.hero{background:linear-gradient(135deg,#101827,#3730a3);color:white;padding:48px 6% 54px}
 .hero h1{font-size:clamp(30px,7vw,48px);line-height:1.15;margin:12px 0}
-.hero p{max-width:620px;color:#e0e7ff}
+.hero p{max-width:600px;color:#e0e7ff}
 .pill{display:inline-block;border:1px solid #a5b4fc;border-radius:30px;padding:4px 12px;font-size:13px}
-.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;background:var(--blue);color:white;border:0;border-radius:10px;padding:12px 16px;cursor:pointer;text-decoration:none;min-height:46px;font:inherit;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;background:var(--blue);color:white;border:0;border-radius:10px;padding:12px 16px;font-weight:700;cursor:pointer;text-decoration:none;min-height:46px}
 .hero .btn{background:white;color:#3730a3;margin-top:8px}
 main{max-width:1000px;margin:auto;padding:22px 16px 50px}
 section{margin:22px 0;scroll-margin-top:15px}
-h2{font-size:25px;margin-bottom:6px}h3{margin:8px 0}
+h2{font-size:25px;margin-bottom:6px}
+h3{margin:8px 0}
 .intro{color:var(--muted);margin-top:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 3px 12px #10182808;min-width:0}
 label{display:block;font-weight:650;font-size:14px;margin:12px 0 5px}
 input,select,textarea{width:100%;padding:12px;border:1px solid #d0d5dd;border-radius:9px;font:inherit;background:white;color:var(--ink)}
-textarea{min-height:95px;resize:vertical}
+textarea{min-height:100px;resize:vertical}
 .result{background:#eef2ff;border-radius:10px;padding:14px;margin-top:14px;overflow-wrap:anywhere;white-space:pre-wrap}
+.result strong{color:#3730a3}
 .small{font-size:13px;color:var(--muted)}
 .price{font-size:24px;font-weight:800;color:#3730a3}
 .tag{display:inline-block;font-size:12px;background:#e0e7ff;color:#3730a3;border-radius:20px;padding:4px 9px}
 .tag.available{background:#dcfae6;color:#067647}
-.product-download,.full{width:100%;margin-top:14px}
+.product-download{width:100%;margin-top:8px}
 .notice{font-size:13px;color:var(--muted);margin:10px 0 0}
 .notice a{color:#4338ca}
 footer{text-align:center;padding:25px 15px;background:#101827;color:#d0d5dd;font-size:13px}
@@ -45,26 +48,26 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 </head>
 <body>
 <header>
-<div class="brand">PocketAI <span>Studio</span></div>
-<a href="#tools">Free tools ↓</a>
+  <div class="brand">PocketAI <span>Studio</span></div>
+  <a href="#tools">Free tools ↓</a>
 </header>
 
 <div class="hero">
-<span class="pill">Made for Indian small businesses</span>
-<h1>Work smarter.<br>Sell with confidence.</h1>
-<p>Calculate prices, create product descriptions, prepare customer replies and download practical resources for your business.</p>
-<a class="btn" href="#tools">Explore free tools →</a>
+  <span class="pill">Made for Indian small businesses</span>
+  <h1>Work smarter.<br>Sell with confidence.</h1>
+  <p>Calculate selling prices, create product descriptions, prepare customer replies and download practical resources for your business.</p>
+  <a class="btn" href="#tools">Explore free tools →</a>
 </div>
 
 <main>
 <section id="tools">
 <h2>Free business tools</h2>
-<p class="intro">Simple tools for online sellers and small businesses.</p>
+<p class="intro">Simple, practical tools that work directly in your browser.</p>
 <div class="grid">
 
 <div class="card">
 <h3>💰 Profit & Pricing Calculator</h3>
-<p class="small">Estimate your selling price and profit after fees.</p>
+<p class="small">Estimate profit after product costs and selling fees.</p>
 <label for="cost">Product cost (₹)</label>
 <input id="cost" type="number" min="0" step="0.01" value="200">
 <label for="pack">Packaging and shipping cost (₹)</label>
@@ -73,14 +76,14 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <input id="fee" type="number" min="0" max="99.99" step="0.1" value="5">
 <label for="margin">Desired profit margin (%)</label>
 <input id="margin" type="number" min="0" max="99" step="1" value="25">
-<button class="btn full" id="calc" type="button">Calculate price</button>
+<button class="btn" id="calc" style="width:100%;margin-top:16px">Calculate price</button>
 <div class="result" id="calcResult" aria-live="polite"></div>
-<p class="small">Estimate only. Taxes and costs not entered are excluded.</p>
+<p class="small">Estimate only. Excludes taxes and costs not entered.</p>
 </div>
 
 <div class="card">
-<h3>✍️ Product Description Generator</h3>
-<p class="small">Create editable descriptions and promotional captions.</p>
+<h3>✍️ Product Description & Caption Generator</h3>
+<p class="small">Creates editable marketing copy using built-in templates.</p>
 <label for="product">Product name</label>
 <input id="product" placeholder="e.g. Handmade cotton tote bag">
 <label for="audience">Target customer</label>
@@ -93,92 +96,79 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <option value="professional">Professional</option>
 <option value="playful">Fun and playful</option>
 </select>
-<button class="btn full" id="generate" type="button">Generate copy</button>
-<div class="result" id="copyResult" aria-live="polite">Your generated copy will appear here.</div>
-<button class="btn full" id="copyBtn" type="button" style="background:#344054">Copy generated text</button>
+<button class="btn" id="generate" style="width:100%;margin-top:16px">Generate copy</button>
+<div class="result" id="copyResult" aria-live="polite">Your description and caption will appear here.</div>
+<button class="btn" id="copyBtn" style="width:100%;margin-top:10px;background:#344054">Copy generated text</button>
 </div>
 
-<div class="card" id="reply-tool">
-<span class="tag available">Free tool</span>
+<div class="card">
 <h3>💬 Customer Reply Generator</h3>
-<p class="small">Create replies for WhatsApp, Instagram and customer enquiries. Choose a category, language and tone.</p>
-
+<p class="small">Prepare polite customer replies in English, Hindi or Hinglish. Review each reply before sending.</p>
+<label for="customerName">Customer name (optional)</label>
+<input id="customerName" placeholder="e.g. Rahul">
+<label for="businessName">Business name (optional)</label>
+<input id="businessName" placeholder="e.g. Vinay Store">
+<label for="customerMessage">Customer's message</label>
+<textarea id="customerMessage" placeholder="e.g. My order is late and I want a refund."></textarea>
 <label for="replyType">Reply category</label>
 <select id="replyType">
-<option value="auto">Automatically identify from message</option>
-<option value="enquiry">Product enquiry</option>
+<option value="auto">Automatically identify</option>
+<option value="enquiry">General enquiry</option>
 <option value="price">Price enquiry</option>
-<option value="complaint">Customer complaint</option>
-<option value="delivery">Delivery or order status</option>
-<option value="positive">Positive review</option>
-<option value="negative">Negative review</option>
+<option value="complaint">Complaint or refund</option>
+<option value="delivery">Delivery or order delay</option>
+<option value="positive">Positive feedback</option>
 <option value="stock">Product availability</option>
-<option value="thanks">Thank-you message</option>
-<option value="custom">Other customer message</option>
+<option value="thanks">Thank you</option>
 </select>
-
-<label for="customerName">Customer name (optional)</label>
-<input id="customerName" placeholder="e.g. Priya">
-
-<label for="businessName">Business name</label>
-<input id="businessName" placeholder="e.g. Pooja's Kitchen">
-
-<label for="customerMessage">Customer's actual message</label>
-<textarea id="customerMessage" placeholder="e.g. My order is late and I want a refund." required></textarea>
-
-<label for="replyLanguage">Reply language</label>
+<label for="replyLanguage">Language</label>
 <select id="replyLanguage">
-<option value="English">English</option>
-<option value="Hindi">Hindi</option>
-<option value="Hinglish">Hinglish (Hindi + English)</option>
+<option value="en">English</option>
+<option value="hi">Hindi</option>
+<option value="hinglish">Hinglish</option>
 </select>
-
-<label for="replyTone">Reply tone</label>
+<label for="replyTone">Tone</label>
 <select id="replyTone">
-<option value="friendly">Friendly and helpful</option>
 <option value="professional">Professional</option>
-<option value="apologetic">Empathetic and apologetic</option>
-<option value="concise">Short and direct</option>
+<option value="friendly">Friendly</option>
+<option value="apologetic">Apologetic</option>
+<option value="concise">Concise</option>
 </select>
-
-<button class="btn full" id="makeReply" type="button">Generate customer reply</button>
-<div class="result" id="replyResult" aria-live="polite">Your reply will appear here.</div>
-<button class="btn full" id="copyReply" type="button" style="background:#344054">Copy customer reply</button>
-<p class="small">Free, rule-based personalisation. This tool does not connect to a live AI model. Verify all details before sending. Never enter passwords, OTPs or sensitive customer information.</p>
+<button class="btn" id="makeReply" style="width:100%;margin-top:16px">Generate customer reply</button>
+<div class="result" id="replyResult" aria-live="polite">Your customer reply will appear here.</div>
+<button class="btn" id="copyReply" style="width:100%;margin-top:10px;background:#344054">Copy customer reply</button>
 </div>
+
 </div>
 </section>
 
 <section id="products">
 <h2>Digital products & resources</h2>
-<p class="intro">Download free resources for Indian online sellers and small businesses.</p>
+<p class="intro">Download these free launch resources for your business.</p>
 <div class="grid">
 
 <div class="card">
 <span class="tag available">Available to download</span>
 <h3>📊 Seller Profit Tracker</h3>
-<p>Track product costs, sales, platform fees and estimated profit using Excel.</p>
+<p>Track product costs, sales, platform fees and estimated profit.</p>
 <div class="price">Free</div>
-<a class="btn product-download" href="PocketAI_Seller_Profit_Tracker.xlsx" download="PocketAI_Seller_Profit_Tracker.xlsx">⬇ Download Excel Tracker</a>
-<p class="notice"><a href="PocketAI_Seller_Profit_Tracker.xlsx">Open spreadsheet directly</a> if needed.</p>
+<a class="btn product-download" href="PocketAI_Seller_Profit_Tracker.xlsx" download>⬇ Download Excel Tracker</a>
 </div>
 
 <div class="card">
 <span class="tag available">Available to download</span>
 <h3>🛍️ Product Listing Templates</h3>
-<p>10 templates for clearer product listings, SEO titles, FAQs and publishing checks.</p>
+<p>10 editable templates to help online sellers prepare clearer product listings.</p>
 <div class="price">Free</div>
-<a class="btn product-download" href="PocketAI_Product_Listing_Templates.pdf" download="PocketAI_Product_Listing_Templates.pdf">⬇ Download Listing Templates</a>
-<p class="notice">PDF format.</p>
+<a class="btn product-download" href="PocketAI_Product_Listing_Templates.pdf" download>⬇ Download Listing Templates</a>
 </div>
 
 <div class="card">
 <span class="tag available">Available to download</span>
 <h3>📣 100 Marketing Captions</h3>
-<p>Ready-to-adapt social media captions for Indian small businesses and online sellers.</p>
+<p>100 promotional caption ideas across 10 categories for small businesses.</p>
 <div class="price">Free</div>
-<a class="btn product-download" href="PocketAI_100_Marketing_Captions.pdf" download="PocketAI_100_Marketing_Captions.pdf">⬇ Download Marketing Captions</a>
-<p class="notice">PDF format.</p>
+<a class="btn product-download" href="PocketAI_100_Marketing_Captions.pdf" download>⬇ Download Marketing Captions</a>
 </div>
 
 </div>
@@ -187,9 +177,9 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <section>
 <div class="card">
 <h2>Built for practical business growth</h2>
-<p>Use our tools to plan prices, create product copy and respond to customers more efficiently.</p>
-<p class="small">Generated content is template-based. Review all claims and details before publishing or sending.</p>
-<p class="small">Downloads are free during launch. Online payment and checkout are not yet available.</p>
+<p>Use the free tools to plan prices, draft product listings and respond to customers.</p>
+<p class="small">These generators use built-in templates and keyword matching, not a connected AI model. They do not verify orders, refunds, stock or delivery status. Check all details before sending or publishing.</p>
+<p class="small">Downloads are free during the launch phase. Online payment and checkout are not yet available.</p>
 </div>
 </section>
 </main>
@@ -199,186 +189,167 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <script>
 (function(){
 const $=id=>document.getElementById(id);
-$('year').textContent=new Date().getFullYear();
+$("year").textContent=new Date().getFullYear();
 
 function calculate(){
-const cost=Number($('cost').value);
-const pack=Number($('pack').value);
-const fee=Number($('fee').value);
-const margin=Number($('margin').value);
-if([cost,pack,fee,margin].some(v=>!Number.isFinite(v)||v<0)||fee>=100||margin>=100||fee+margin>=100){
-$('calcResult').textContent='Enter valid non-negative costs and percentages below 100. Fee plus margin must be below 100%.';
-return;
+ const cost=Number($("cost").value);
+ const pack=Number($("pack").value);
+ const fee=Number($("fee").value);
+ const margin=Number($("margin").value);
+ const result=$("calcResult");
+
+ if([cost,pack,fee,margin].some(v=>!Number.isFinite(v)||v<0)||fee>=100||margin>=100||fee+margin>=100){
+  result.textContent="Enter valid non-negative costs and percentages below 100. Fee plus margin must be below 100%.";
+  return;
+ }
+ const base=cost+pack;
+ const price=base/(1-fee/100-margin/100);
+ if(!Number.isFinite(price)||price<=0){
+  result.textContent="Unable to calculate with these values.";
+  return;
+ }
+ const rounded=Math.ceil(price);
+ const profit=rounded-(base+rounded*fee/100);
+ result.textContent="Suggested selling price: ₹"+rounded.toLocaleString("en-IN")+
+ "\nEstimated profit: ₹"+profit.toFixed(2)+
+ "\nEstimated profit margin: "+(profit/rounded*100).toFixed(1)+"%";
 }
-const base=cost+pack;
-const price=base/(1-fee/100-margin/100);
-if(!Number.isFinite(price)||price<=0){
-$('calcResult').textContent='Unable to calculate. Check your inputs.';
-return;
-}
-const rounded=Math.ceil(price);
-const profit=rounded-(base+rounded*fee/100);
-$('calcResult').textContent='Suggested selling price: ₹'+rounded.toLocaleString('en-IN')+
-'\nEstimated profit: ₹'+profit.toFixed(2)+
-'\nEstimated profit margin: '+(profit/rounded*100).toFixed(1)+'%';
-}
-$('calc').addEventListener('click',calculate);
-['cost','pack','fee','margin'].forEach(id=>$(id).addEventListener('input',calculate));
+$("calc").addEventListener("click",calculate);
+["cost","pack","fee","margin"].forEach(id=>$(id).addEventListener("input",calculate));
 calculate();
 
-$('generate').addEventListener('click',function(){
-const name=$('product').value.trim().replace(/[<>]/g,'');
-const audience=$('audience').value.trim().replace(/[<>]/g,'')||'customers';
-const features=$('features').value.trim().replace(/[<>]/g,'');
-const tone=$('tone').value;
-if(!name){$('copyResult').textContent='Please enter a product name first.';return;}
-const intros={friendly:'Meet your new favourite: ',professional:'Introducing ',playful:'Good things are here! Say hello to '};
-const captions={
-friendly:'Looking for something useful? '+name+' might be just what you need.',
-professional:'Discover '+name+', presented for '+audience+'.',
-playful:'Your next favourite is calling! ✨ Meet '+name+'.'
-};
-const description=intros[tone]+name+'. Made for '+audience+
-(features?', it offers '+features+'.':'. Explore the details to see if it suits your needs.');
-$('copyResult').textContent='PRODUCT DESCRIPTION\n'+description+
-'\n\nPROMOTIONAL CAPTION\n'+captions[tone]+'\n\nReview before publishing.';
+$("generate").addEventListener("click",function(){
+ const name=$("product").value.trim();
+ const audience=$("audience").value.trim()||"customers";
+ const features=$("features").value.trim().replace(/[<>]/g,"");
+ const tone=$("tone").value;
+ if(!name){$("copyResult").textContent="Please enter a product name first.";return;}
+ const intros={
+ friendly:"Meet your new favourite: ",
+ professional:"Introducing ",
+ playful:"Good things are here! Say hello to "
+ };
+ const captions={
+ friendly:"Looking for something useful? "+name+" might be just what you need.",
+ professional:"Discover "+name+", thoughtfully presented for "+audience+".",
+ playful:"Your next favourite is calling! ✨ Meet "+name+"."
+ };
+ const detail=features||"designed with everyday needs in mind";
+ $("copyResult").textContent="PRODUCT DESCRIPTION\n"+intros[tone]+name+
+ ". Made for "+audience+", it offers "+detail+
+ ". Explore the details and see if it is right for you.\n\nPROMOTIONAL CAPTION\n"+
+ captions[tone]+"\n\nReview and customise before publishing.";
 });
 
-function makeCustomerReply(){
-const type=$('replyType').value;
-const customer=$('customerName').value.trim().replace(/[<>]/g,'');
-const business=$('businessName').value.trim().replace(/[<>]/g,'')||'Our Team';
-const message=$('customerMessage').value.trim().replace(/[<>]/g,'');
-const language=$('replyLanguage').value;
-const tone=$('replyTone').value;
-
-if(!message){
-$('replyResult').textContent='Please enter the customer message first.';
-return;
-}
-
-const lower=message.toLowerCase();
-const patterns={
-delivery:/late|delay|delayed|not arrived|not received|where is my order|delivery|tracking|कब आएगा|नहीं आया|देरी|order status|parcel.*not|order.*late/,
-complaint:/damaged|broken|defective|wrong item|poor quality|complaint|unhappy|खराब|टूटा|गलत सामान|शिकायत/,
-refund:/refund|money back|return my|cancel.*order|रिफंड|पैसे वापस|वापस करना/,
-price:/price|cost|how much|rate|कीमत|कितना/,
-stock:/available|availability|in stock|out of stock|स्टॉक|उपलब्ध/,
-positive:/thank you|thanks|love it|great service|excellent service|बहुत अच्छा|धन्यवाद/
-};
-
-let category=type;
-if(type==='auto'){
-if(patterns.refund.test(lower)||patterns.complaint.test(lower)) category='complaint';
-else if(patterns.delivery.test(lower)) category='delivery';
-else if(patterns.price.test(lower)) category='price';
-else if(patterns.stock.test(lower)) category='stock';
-else if(patterns.positive.test(lower)) category='positive';
-else category='enquiry';
-}
-
-const en={
-enquiry:'Thank you for your interest! Please tell us which product or option you would like to know more about, and we will share the available details.',
-price:'Thank you for your price enquiry. Please confirm the product or variant you are interested in, and we will check the current price and any applicable charges.',
-complaint:'We are sorry to hear about this issue. Thank you for bringing it to our attention. Please share your order reference through our official support channel so our team can review it and assist you.',
-delivery:'We understand you are waiting for your order. Please share your order reference through our official support channel. We will check the available tracking information and update you.',
-positive:'Thank you for your kind feedback! We truly appreciate your support and are glad you took the time to share your experience.',
-negative:'Thank you for sharing your feedback. We are sorry your experience did not meet expectations. Please contact us through our official support channel so we can review the details.',
-stock:'Thank you for checking availability. Please tell us the product, size or variant you need, and we will confirm the current stock status.',
-thanks:'You are most welcome! Thank you for choosing our business. Please contact us if you need further assistance.',
-custom:'Thank you for your message. We appreciate you contacting us and will review the details to help with the next steps.'
-};
-
-const hi={
-enquiry:'संपर्क करने के लिए धन्यवाद। कृपया बताएं कि आप किस प्रोडक्ट के बारे में जानकारी चाहते हैं। हम उपलब्ध जानकारी साझा करेंगे।',
-price:'कीमत पूछने के लिए धन्यवाद। कृपया प्रोडक्ट या वैरिएंट बताएं, ताकि हम मौजूदा कीमत और लागू शुल्क की पुष्टि कर सकें।',
-complaint:'आपको हुई परेशानी के लिए हमें खेद है। कृपया हमारे आधिकारिक सपोर्ट चैनल पर ऑर्डर रेफरेंस साझा करें, ताकि हमारी टीम समस्या की जाँच करके आपकी मदद कर सके।',
-delivery:'हम समझते हैं कि आप अपने ऑर्डर का इंतज़ार कर रहे हैं। कृपया आधिकारिक सपोर्ट चैनल पर ऑर्डर रेफरेंस साझा करें। हम उपलब्ध ट्रैकिंग जानकारी जाँचकर आपको अपडेट देंगे।',
-positive:'आपकी अच्छी प्रतिक्रिया के लिए बहुत धन्यवाद। हम आपके समर्थन की सराहना करते हैं।',
-negative:'अपना अनुभव साझा करने के लिए धन्यवाद। हमें खेद है कि आपका अनुभव उम्मीद के अनुसार नहीं रहा। कृपया आधिकारिक सपोर्ट चैनल पर विवरण साझा करें, ताकि हम इसकी जाँच कर सकें।',
-stock:'उपलब्धता पूछने के लिए धन्यवाद। कृपया प्रोडक्ट, साइज़ या वैरिएंट बताएं, ताकि हम स्टॉक की पुष्टि कर सकें।',
-thanks:'आपका स्वागत है। हमारे व्यवसाय को चुनने के लिए धन्यवाद। यदि आपको और सहायता चाहिए, तो हमें संदेश भेजें।',
-custom:'आपके संदेश के लिए धन्यवाद। हम विवरण की समीक्षा करके अगले कदमों में आपकी सहायता करेंगे।'
-};
-
-const hinglish={
-enquiry:'Contact karne ke liye thank you! Aap kis product ke baare mein jaanna chahte hain? Hum available details share karenge.',
-price:'Price poochhne ke liye thank you. Aap product ya variant bata dein, hum current price aur applicable charges confirm karke batayenge.',
-complaint:'Aapko hui pareshani ke liye humein afsos hai. Please apna order reference official support channel par share karein, taaki hum issue review karke help kar saken.',
-delivery:'Hum samajhte hain ki aap apne order ka wait kar rahe hain. Please order reference official support channel par share karein. Hum available tracking details check karke update denge.',
-positive:'Aapke kind feedback ke liye bahut thank you! Hum aapke support ki sarahna karte hain.',
-negative:'Feedback share karne ke liye thank you. Humein afsos hai ki experience expectations ke according nahi raha. Please official support channel par details share karein, taaki hum review kar saken.',
-stock:'Availability check karne ke liye thank you. Please product aur required size ya variant bata dein. Hum stock confirm karke batayenge.',
-thanks:'You are most welcome! Hamare business ko choose karne ke liye thank you. Kisi bhi help ke liye humein message karein.',
-custom:'Aapke message ke liye thank you. Hum details review karke aapko next steps mein help karenge.'
-};
-
-const dictionaries={English:en,Hindi:hi,Hinglish:hinglish};
-const dict=dictionaries[language];
-let reply=dict[category]||dict.custom;
-
-if(patterns.refund.test(lower)){
-const refundText={
-English:' We will review the order details and explain the applicable return or refund policy. Any refund depends on policy and eligibility.',
-Hindi:' हम ऑर्डर की जानकारी जाँचकर लागू रिटर्न या रिफंड नीति बताएंगे। रिफंड की पात्रता संबंधित नीति पर निर्भर करेगी।',
-Hinglish:' Hum order details check karke applicable return ya refund policy batayenge. Refund policy aur eligibility par depend karega.'
-};
-reply+=refundText[language];
-}
-
-if(patterns.complaint.test(lower)){
-const issueText={
-English:' Please keep the product and packaging available if relevant while we review the issue.',
-Hindi:' कृपया समस्या की जाँच होने तक, यदि लागू हो, प्रोडक्ट और उसकी पैकेजिंग सुरक्षित रखें।',
-Hinglish:' Please issue review hone tak, agar relevant ho, product aur packaging sambhal kar rakhein.'
-};
-reply+=issueText[language];
-}
-
-if(tone==='concise'){
-reply=reply.split(/(?<=[.!?।])\s+/).slice(0,2).join(' ');
-}else if(tone==='professional'&&language==='English'){
-reply='Hello'+(customer?' '+customer:'')+', '+reply;
-}else if(tone==='friendly'&&language==='English'){
-reply='Hi'+(customer?' '+customer:'')+'! '+reply;
-}else if(tone==='apologetic'&&language==='English'&&!['complaint','negative'].includes(category)){
-reply='Thank you for reaching out. We appreciate your patience. '+reply;
-}
-
-const signoff=language==='Hindi'?'\n\nसादर,\n'+business:'\n\nRegards,\n'+business;
-$('replyResult').textContent=reply+signoff+
-'\n\nPlease verify all details before sending.';
-}
-
-$('makeReply').addEventListener('click',makeCustomerReply);
-
 async function copyText(text,button,original){
-if(!text||text==='Your generated copy will appear here.'||text==='Your reply will appear here.'){
-button.textContent='Generate text first';
-setTimeout(()=>button.textContent=original,1800);
-return;
+ try{
+  if(navigator.clipboard&&window.isSecureContext){
+   await navigator.clipboard.writeText(text);
+   button.textContent="Copied!";
+   return;
+  }
+  throw new Error("Clipboard unavailable");
+ }catch(e){
+  const area=document.createElement("textarea");
+  area.value=text;
+  area.style.position="fixed";
+  area.style.opacity="0";
+  document.body.appendChild(area);
+  area.select();
+  let copied=false;
+  try{copied=document.execCommand("copy");}catch(err){}
+  area.remove();
+  button.textContent=copied?"Copied!":"Select and copy the text manually";
+  if(!copied)window.prompt("Copy this text:",text);
+ }
+ setTimeout(()=>button.textContent=original,2500);
 }
-try{
-if(navigator.clipboard&&window.isSecureContext){
-await navigator.clipboard.writeText(text);
-button.textContent='Copied!';
-}else{
-const area=document.createElement('textarea');
-area.value=text;
-area.style.position='fixed';
-area.style.opacity='0';
-document.body.appendChild(area);
-area.select();
-const ok=document.execCommand('copy');
-area.remove();
-button.textContent=ok?'Copied!':'Select and copy manually';
-}
-}catch(e){button.textContent='Select and copy manually';}
-setTimeout(()=>button.textContent=original,1800);
+$("copyBtn").addEventListener("click",()=>copyText($("copyResult").innerText,$("copyBtn"),"Copy generated text"));
+
+function detectCategory(message){
+ const m=message.toLowerCase();
+ const has=pattern=>pattern.test(m);
+ const delivery=/\b(late|delay|delayed|not arrived|not received|where is my order|delivery|tracking|parcel|order status|order is late)\b|कब आएगा|नहीं आया|देरी/.test(m);
+ const refund=/\b(refund|money back|return|cancel my order|cancel order)\b|रिफंड|पैसे वापस/.test(m);
+ const complaint=/\b(damaged|broken|defective|wrong item|poor quality|complaint|unhappy)\b|खराब|टूटा|गलत सामान|शिकायत/.test(m);
+ const price=/\b(price|cost|how much|rate|expensive)\b|कीमत|कितना/.test(m);
+ const stock=/\b(available|availability|in stock|out of stock|stock)\b|स्टॉक|उपलब्ध/.test(m);
+ const positive=/\b(love it|great service|excellent service|happy with|awesome|great product)\b|बहुत अच्छा/.test(m);
+ const thanks=/\b(thank you|thanks|thankyou)\b|धन्यवाद/.test(m);
+ if(delivery)return "delivery";
+ if(refund||complaint)return "complaint";
+ if(price)return "price";
+ if(stock)return "stock";
+ if(positive)return "positive";
+ if(thanks)return "thanks";
+ return "enquiry";
 }
 
-$('copyBtn').addEventListener('click',()=>copyText($('copyResult').innerText,$('copyBtn'),'Copy generated text'));
-$('copyReply').addEventListener('click',()=>copyText($('replyResult').innerText,$('copyReply'),'Copy customer reply'));
+const replies={
+ en:{
+  enquiry:"Thank you for contacting us. Please share a few more details so we can assist you.",
+  price:"Thank you for your interest. Please check the product listing for the latest price, offers and applicable charges.",
+  complaint:"We are sorry to hear about your experience. Please share your order details and the issue so we can review it and explain the available resolution or refund process.",
+  delivery:"We are sorry your order has been delayed. Please share your order ID so we can check the delivery status and guide you on the next steps.",
+  positive:"Thank you for your kind feedback! We really appreciate your support and hope to serve you again.",
+  stock:"Thank you for your interest. Please check the current product listing or contact us to confirm availability.",
+  thanks:"You're welcome! Thank you for choosing us. We are happy to help."
+ },
+ hi:{
+  enquiry:"हमसे संपर्क करने के लिए धन्यवाद। कृपया थोड़ी और जानकारी साझा करें ताकि हम आपकी सहायता कर सकें।",
+  price:"आपकी रुचि के लिए धन्यवाद। कृपया नवीनतम कीमत, ऑफर और अन्य शुल्क के लिए प्रोडक्ट लिस्टिंग देखें।",
+  complaint:"आपको हुई परेशानी के लिए हमें खेद है। कृपया ऑर्डर की जानकारी और समस्या साझा करें ताकि हम उपलब्ध समाधान या रिफंड प्रक्रिया के बारे में बता सकें।",
+  delivery:"आपके ऑर्डर में देरी के लिए हमें खेद है। कृपया अपना ऑर्डर ID साझा करें ताकि हम डिलीवरी की स्थिति जांचने में आपकी मदद कर सकें।",
+  positive:"आपकी अच्छी प्रतिक्रिया के लिए बहुत धन्यवाद! हम आपके सहयोग की सराहना करते हैं।",
+  stock:"आपकी रुचि के लिए धन्यवाद। कृपया उपलब्धता की पुष्टि के लिए प्रोडक्ट लिस्टिंग देखें या हमसे संपर्क करें।",
+  thanks:"आपका स्वागत है! हमें चुनने के लिए धन्यवाद। हम आपकी सहायता करके खुश हैं।"
+ },
+ hinglish:{
+  enquiry:"Humse contact karne ke liye thank you. Please thodi aur details share karein, taaki hum aapki help kar sakein.",
+  price:"Aapki interest ke liye thank you. Latest price, offers aur extra charges ke liye product listing check karein.",
+  complaint:"Aapko hui problem ke liye humein afsos hai. Please order details aur issue share karein, taaki hum available solution ya refund process bata sakein.",
+  delivery:"Order late hone ke liye humein afsos hai. Please apna order ID share karein, taaki delivery status check karne mein help kar sakein.",
+  positive:"Aapke feedback ke liye bahut thank you! Hum aapke support ki value karte hain.",
+  stock:"Aapki interest ke liye thank you. Availability confirm karne ke liye product listing check karein ya humse contact karein.",
+  thanks:"Aapka welcome hai! Humein choose karne ke liye thank you. Hum help ke liye available hain."
+ }
+};
+
+$("makeReply").addEventListener("click",function(){
+ const message=$("customerMessage").value.trim();
+ if(!message){$("replyResult").textContent="Please enter the customer's message first.";return;}
+ let category=$("replyType").value;
+ if(category==="auto")category=detectCategory(message);
+ const lang=$("replyLanguage").value;
+ const tone=$("replyTone").value;
+ const name=$("customerName").value.trim();
+ const business=$("businessName").value.trim();
+ let reply=replies[lang][category]||replies[lang].enquiry;
+
+ if(tone==="friendly"){
+  if(lang==="en")reply="Hi"+(name?" "+name:"")+"! "+reply;
+  else if(lang==="hi")reply=(name?name+" जी, ":"")+reply;
+  else reply=(name?"Hi "+name+"! ":"")+reply;
+ }else if(tone==="professional"){
+  if(lang==="en")reply="Hello"+(name?" "+name:"")+",\n"+reply;
+  else if(name)reply=name+" जी,\n"+reply;
+ }else if(tone==="apologetic"&&category!=="complaint"&&category!=="delivery"){
+  if(lang==="en")reply="Thank you for your patience. "+reply;
+  else if(lang==="hi")reply="आपके धैर्य के लिए धन्यवाद। "+reply;
+  else reply="Aapke patience ke liye thank you. "+reply;
+ }
+ if(category==="complaint"&&/\b(refund|money back|रिफंड|पैसे वापस)\b/i.test(message)){
+  if(lang==="en")reply+=" Refund eligibility and processing depend on the applicable return policy and order review.";
+  else if(lang==="hi")reply+=" रिफंड की पात्रता और प्रक्रिया लागू रिटर्न पॉलिसी तथा ऑर्डर की जांच पर निर्भर करेगी।";
+  else reply+=" Refund eligibility aur process applicable return policy aur order review par depend karega.";
+ }
+ if(business)reply+="\n\n"+(lang==="en"?"Regards,":lang==="hi"?"सादर,":"Regards,")+"\n"+business;
+ if(tone==="concise"){
+  reply=reply.split(/(?<=[.!?।])\s+/).slice(0,2).join(" ");
+ }
+ $("replyResult").textContent=reply;
+});
+$("copyReply").addEventListener("click",()=>copyText($("replyResult").innerText,$("copyReply"),"Copy customer reply"));
 })();
 </script>
 </body>
