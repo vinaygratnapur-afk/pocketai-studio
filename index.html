@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>PocketAI Studio | Free Tools for Indian Sellers</title>
+<meta name="description" content="Free pricing calculators, product descriptions, marketing captions and digital resources for Indian small businesses.">
+<style>
+:root{--bg:#f5f7fb;--ink:#172033;--blue:#4f46e5;--muted:#667085;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,sans-serif;line-height:1.6}
+header{background:#101827;color:white;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-size:20px;font-weight:800}.brand span{color:#a5b4fc}
+header a{color:white;text-decoration:none;font-size:14px}
+.hero{background:linear-gradient(135deg,#101827,#3730a3);color:white;padding:48px 6% 54px}
+.hero h1{font-size:clamp(30px,7vw,48px);line-height:1.15;margin:12px 0}
+.hero p{max-width:600px;color:#e0e7ff}
+.pill{display:inline-block;border:1px solid #a5b4fc;border-radius:30px;padding:4px 12px;font-size:13px}
+.btn{background:var(--blue);color:white;border:0;border-radius:10px;padding:12px 16px;font-weight:700;cursor:pointer}
+.hero .btn{background:white;color:#3730a3;margin-top:8px}
+main{max-width:1000px;margin:auto;padding:22px 16px 50px}
+section{margin:22px 0;scroll-margin-top:15px}
+h2{font-size:25px;margin-bottom:6px}h3{margin:8px 0}
+.intro{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:16px}
+.card{background:var(--card);border:1px solid #e4e7ec;border-radius:16px;padding:20px;box-shadow:0 3px 12px #10182808}
+label{display:block;font-weight:650;font-size:14px;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #d0d5dd;border-radius:9px;font:inherit;background:white;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.result{background:#eef2ff;border-radius:10px;padding:14px;margin-top:14px;overflow-wrap:anywhere}
+.result strong{color:#3730a3}
+.small{font-size:13px;color:var(--muted)}
+.price{font-size:24px;font-weight:800;color:#3730a3}
+.tag{font-size:12px;background:#e0e7ff;color:#3730a3;border-radius:20px;padding:4px 9px}
+footer{text-align:center;padding:25px 15px;background:#101827;color:#d0d5dd;font-size:13px}
+button:focus,input:focus,textarea:focus,select:focus{outline:2px solid #a5b4fc;outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">PocketAI <span>Studio</span></div>
+  <a href="#tools">Free tools ↓</a>
+</header>
+<div class="hero">
+  <span class="pill">Made for Indian small businesses</span>
+  <h1>Work smarter.<br>Sell with confidence.</h1>
+  <p>Calculate your selling price, create product descriptions and marketing captions, and discover practical resources for your business.</p>
+  <a href="#tools"><button class="btn">Explore free tools →</button></a>
+</div>
+<main>
+<section id="tools">
+<h2>Free business tools</h2>
+<p class="intro">Simple, practical tools that work directly in your browser.</p>
+<div class="grid">
+<div class="card">
+<h3>💰 Profit & Pricing Calculator</h3>
+<p class="small">Estimate your profit after costs and selling fees.</p>
+<label for="cost">Product cost (₹)</label><input id="cost" type="number" min="0" step="0.01" value="200">
+<label for="pack">Packaging and shipping cost (₹)</label><input id="pack" type="number" min="0" step="0.01" value="30">
+<label for="fee">Marketplace/payment fee (%)</label><input id="fee" type="number" min="0" max="99.99" step="0.1" value="5">
+<label for="margin">Desired profit margin (%)</label><input id="margin" type="number" min="0" max="99" step="1" value="25">
+<button class="btn" id="calc" style="width:100%;margin-top:16px">Calculate price</button>
+<div class="result" id="calcResult" aria-live="polite">Your suggested price will appear here.</div>
+<p class="small">Estimate only. Excludes taxes and other costs not entered.</p>
+</div>
+<div class="card">
+<h3>✍️ Product Description & Caption Generator</h3>
+<p class="small">Creates editable marketing copy using free, built-in templates. No paid AI API required.</p>
+<label for="product">Product name</label><input id="product" placeholder="e.g. Handmade cotton tote bag">
+<label for="audience">Target customer</label><input id="audience" placeholder="e.g. College students">
+<label for="features">Key features</label><textarea id="features" placeholder="e.g. Reusable, lightweight, three colours"></textarea>
+<label for="tone">Writing style</label>
+<select id="tone"><option value="friendly">Friendly</option><option value="professional">Professional</option><option value="playful">Fun and playful</option></select>
+<button class="btn" id="generate" style="width:100%;margin-top:16px">Generate copy</button>
+<div class="result" id="copyResult" aria-live="polite">Your description and caption will appear here.</div>
+<button class="btn" id="copyBtn" style="width:100%;margin-top:10px;background:#344054">Copy generated text</button>
+</div>
+</div>
+</section>
+<section id="products">
+<h2>Digital products & resources</h2>
+<p class="intro">Starter resources for sellers. Sample listings below are concepts, not purchasable downloads yet.</p>
+<div class="grid">
+<div class="card"><span class="tag">Coming soon</span><h3>📊 Seller Profit Tracker</h3><p>Plan product costs, sales, fees and estimated profit with a simple spreadsheet.</p><div class="price">₹99 <span class="small">planned price</span></div><p class="small">Download not yet available.</p></div>
+<div class="card"><span class="tag">Coming soon</span><h3>🛍️ Product Listing Templates</h3><p>Reusable formats for writing clear marketplace listings and highlighting product features.</p><div class="price">₹149 <span class="small">planned price</span></div><p class="small">Download not yet available.</p></div>
+<div class="card"><span class="tag">Coming soon</span><h3>📣 100 Marketing Captions</h3><p>A planned collection of editable promotional captions for small businesses and online sellers.</p><div class="price">₹99 <span class="small">planned price</span></div><p class="small">Download not yet available.</p></div>
+</div>
+</section>
+<section>
+<div class="card">
+<h2>Built for practical business growth</h2>
+<p>Start with free tools. Use the results to make better pricing decisions and prepare clearer product listings.</p>
+<p class="small">The text generator uses templates and your inputs, not a connected AI model. Check all generated claims before publishing them.</p>
+</div>
+</section>
+</main>
+<footer>© <span id="year"></span> PocketAI Studio · Free tools for small businesses in India</footer>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+$('year').textContent=new Date().getFullYear();
+function calculate(){
+const cost=Number($('cost').value),pack=Number($('pack').value),fee=Number($('fee').value),margin=Number($('margin').value);
+if([cost,pack,fee,margin].some(v=>!Number.isFinite(v)||v<0)||fee>=100||margin>=100){
+$('calcResult').textContent='Enter valid non-negative costs and percentages below 100.';return;
+}
+const base=cost+pack,price=base/(1-(fee/100)-(margin/100));
+if(!Number.isFinite(price)||price<0){$('calcResult').textContent='Unable to calculate with these values.';return}
+const rounded=Math.ceil(price);
+const profit=rounded-(base+rounded*fee/100);
+$('calcResult').innerHTML='<strong>Suggested selling price: ₹'+rounded.toLocaleString('en-IN')+'</strong><br>Estimated profit: ₹'+profit.toFixed(2)+'<br>Profit margin: '+(profit/rounded*100).toFixed(1)+'%';
+}
+$('calc').addEventListener('click',calculate);
+['cost','pack','fee','margin'].forEach(id=>$(id).addEventListener('input',calculate));
+calculate();
+$('generate').addEventListener('click',function(){
+const name=$('product').value.trim(),audience=$('audience').value.trim(),features=$('features').value.trim(),tone=$('tone').value;
+if(!name){$('copyResult').textContent='Please enter a product name first.';return}
+const who=audience||'customers';
+const detail=features?features.replace(/[<>]/g,''): 'designed with your everyday needs in mind';
+const intros={friendly:'Meet your new favourite: ',professional:'Introducing ',playful:'Good things are here! Say hello to '};
+const caption={friendly:'Looking for something useful? '+name+' might be just what you need.',professional:'Discover '+name+', thoughtfully presented for '+who+'.',playful:'Your next favourite is calling! ✨ Meet '+name+'.'};
+const description=intros[tone]+name+'. '+ 'Made for '+who+', it offers '+detail+'. Explore the details and see if it is right for you.';
+$('copyResult').textContent='PRODUCT DESCRIPTION\n'+description+'\n\nPROMOTIONAL CAPTION\n'+caption[tone]+'\n\nReview and customise before publishing.';
+});
+$('copyBtn').addEventListener('click',async function(){
+const text=$('copyResult').innerText;
+try{await navigator.clipboard.writeText(text);$('copyBtn').textContent='Copied!'}catch(e){
+const range=document.createRange();range.selectNodeContents($('copyResult'));const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);$('copyBtn').textContent='Select text, then copy';
+}
+});
+})();
+</script>
+</body>
+</html>
