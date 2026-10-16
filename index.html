@@ -13,7 +13,8 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,sans-serif;line-height:1.6}
 header{background:#101827;color:white;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.brand{font-size:20px;font-weight:800}.brand span{color:#a5b4fc}
+.brand{font-size:20px;font-weight:800}
+.brand span{color:#a5b4fc}
 header a{color:white;text-decoration:none;font-size:14px}
 .hero{background:linear-gradient(135deg,#101827,#3730a3);color:white;padding:48px 6% 54px}
 .hero h1{font-size:clamp(30px,7vw,48px);line-height:1.15;margin:12px 0}
@@ -46,6 +47,7 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 </style>
 </head>
 <body>
+
 <header>
   <div class="brand">PocketAI <span>Studio</span></div>
   <a href="#tools">Free tools ↓</a>
@@ -67,14 +69,19 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <div class="card">
 <h3>💰 Profit & Pricing Calculator</h3>
 <p class="small">Estimate your profit after costs and selling fees.</p>
+
 <label for="cost">Product cost (₹)</label>
 <input id="cost" type="number" min="0" step="0.01" value="200">
+
 <label for="pack">Packaging and shipping cost (₹)</label>
 <input id="pack" type="number" min="0" step="0.01" value="30">
+
 <label for="fee">Marketplace/payment fee (%)</label>
 <input id="fee" type="number" min="0" max="99.99" step="0.1" value="5">
+
 <label for="margin">Desired profit margin (%)</label>
 <input id="margin" type="number" min="0" max="99" step="1" value="25">
+
 <button class="btn" id="calc" style="width:100%;margin-top:16px">Calculate price</button>
 <div class="result" id="calcResult" aria-live="polite">Your suggested price will appear here.</div>
 <p class="small">Estimate only. Excludes taxes and other costs not entered.</p>
@@ -83,18 +90,23 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <div class="card">
 <h3>✍️ Product Description & Caption Generator</h3>
 <p class="small">Creates editable marketing copy using built-in templates. No paid AI API required.</p>
+
 <label for="product">Product name</label>
 <input id="product" placeholder="e.g. Handmade cotton tote bag">
+
 <label for="audience">Target customer</label>
 <input id="audience" placeholder="e.g. College students">
+
 <label for="features">Key features</label>
 <textarea id="features" placeholder="e.g. Reusable, lightweight, three colours"></textarea>
+
 <label for="tone">Writing style</label>
 <select id="tone">
 <option value="friendly">Friendly</option>
 <option value="professional">Professional</option>
 <option value="playful">Fun and playful</option>
 </select>
+
 <button class="btn" id="generate" style="width:100%;margin-top:16px">Generate copy</button>
 <div class="result" id="copyResult" aria-live="polite">Your description and caption will appear here.</div>
 <button class="btn" id="copyBtn" style="width:100%;margin-top:10px;background:#344054">Copy generated text</button>
@@ -106,6 +118,7 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <section id="products">
 <h2>Digital products & resources</h2>
 <p class="intro">Download available resources below. More templates and seller tools are in development.</p>
+
 <div class="grid">
 
 <div class="card">
@@ -119,11 +132,13 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 </div>
 
 <div class="card">
-<span class="tag">Coming soon</span>
+<span class="tag available">Available to download</span>
 <h3>🛍️ Product Listing Templates</h3>
-<p>Reusable formats for writing clear marketplace listings and highlighting product features.</p>
-<div class="price">₹149 <span class="small">planned price</span></div>
-<p class="small">Not available yet. Pricing is indicative and no payment is currently collected.</p>
+<p>10 practical, editable templates to help Indian online sellers create clearer product listings.</p>
+<div class="price">Free launch download</div>
+<p class="small">Includes listing formats, product specifications checklists, SEO title guidance, product FAQs and a publishing checklist.</p>
+<a class="btn product-download" href="PocketAI_Product_Listing_Templates.pdf" download="PocketAI_Product_Listing_Templates.pdf">⬇ Download Listing Templates</a>
+<p class="notice">PDF format. Open with your phone's PDF viewer or another compatible app.</p>
 </div>
 
 <div class="card">
@@ -142,6 +157,7 @@ button:focus,a:focus,input:focus,textarea:focus,select:focus{outline:2px solid #
 <h2>Built for practical business growth</h2>
 <p>Start with free tools. Use the results to make better pricing decisions and prepare clearer product listings.</p>
 <p class="small">The text generator uses templates and your inputs, not a connected AI model. Check all generated claims before publishing them.</p>
+<p class="small">Digital downloads are currently offered free during the launch phase. Online payment and checkout are not yet available.</p>
 </div>
 </section>
 </main>
@@ -195,11 +211,13 @@ return;
 
 const who=audience||'customers';
 const detail=features?features.replace(/[<>]/g,''):'designed with your everyday needs in mind';
+
 const intros={
 friendly:'Meet your new favourite: ',
 professional:'Introducing ',
 playful:'Good things are here! Say hello to '
 };
+
 const caption={
 friendly:'Looking for something useful? '+name+' might be just what you need.',
 professional:'Discover '+name+', thoughtfully presented for '+who+'.',
